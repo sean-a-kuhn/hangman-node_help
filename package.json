@@ -1,0 +1,22 @@
+{
+  "name": "hangman-node",
+  "version": "1.0.0",
+  "description": "A simple hangman game using Node JS, as well as the Inquirer NPM. (Week 11 Assignment)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NKClem/hangman-node.git"
+  },
+  "author": "Nicole K. Clements",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NKClem/hangman-node/issues"
+  },
+  "homepage": "https://github.com/NKClem/hangman-node#readme",
+  "dependencies": {
+    "inquirer": "^5.0.1"
+  }
+}
