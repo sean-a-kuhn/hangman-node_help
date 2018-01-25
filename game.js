@@ -8,6 +8,7 @@ const wordsToGuessArray = Answers.wordsToGuess.words;
 
 let currentWord = 0;
 let numOfGuesses = 10;
+let lettersGuessed = [];
 
 function setGameDirection() {
     if (currentWord <= wordsToGuessArray.length) {
@@ -18,16 +19,7 @@ function setGameDirection() {
 function renderGameWords(answer) {
     let item = new Word(answer);
     item.generatePuzzle();
-    printPuzzle(item);
-}
-
-// function to print puzzle to console
-function printPuzzle(word) {
-   var currentPuzzle = "";
-   for (var i=0; i<word.lettersArray.length; i++) {
-      currentPuzzle = currentPuzzle + word.lettersArray[i].printLetter + " ";
-   }
-   console.log(currentPuzzle);
+    item.printPuzzle();
 }
 
 function startGame() {

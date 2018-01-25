@@ -4,10 +4,6 @@ class Word {
     constructor(answer) {
       this.name = answer;
       this.lettersArray = [];// array of Letter objects
-            //[obj1, obj2, obj3, obj4...]
-            //obj1.letter = "h", obj1.printLetter = "_"
-            //obj2.letter = "e", obj2.printLetter = "_"
-      //this.puzzle = this.updateWord(" "); //"hey jude" "_ _ _   _ _ _ _ "
    }
 }
 
@@ -21,6 +17,16 @@ Word.prototype.generatePuzzle = function() {
       this.lettersArray.push(letter); // add Letter object to array
    }
 }
+
+// function to print puzzle to console
+Word.prototype.printPuzzle = function() {
+   var currentPuzzle = "";
+   for (var i=0; i<this.lettersArray.length; i++) {
+      currentPuzzle = currentPuzzle + this.lettersArray[i].printLetter + " ";
+   }
+   console.log(currentPuzzle);
+}
+
 /*
 Word.prototype.updateWord = function(guess) {
    var word; // var to build puzzle string and return to function call
