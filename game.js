@@ -21,6 +21,7 @@ function renderGameWords(answer) {
     printPuzzle(item);
 }
 
+// function to print puzzle to console
 function printPuzzle(word) {
    var currentPuzzle = "";
    for (var i=0; i<word.lettersArray.length; i++) {

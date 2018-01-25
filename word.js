@@ -14,6 +14,10 @@ class Word {
 Word.prototype.generatePuzzle = function() {
    for (var i = 0; i < this.name.length; i++) {
       var letter = new Letter(this.name[i]); // create Letter object
+      // if letter value is a space, assign " " to printLetter property
+      if (letter.letter === " ") {
+         letter.printLetter = " ";
+      }
       this.lettersArray.push(letter); // add Letter object to array
    }
 }
